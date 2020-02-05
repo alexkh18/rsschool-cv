@@ -23,3 +23,15 @@ since November 2018
 * mentoring
 * teamwork
 * production experience
+
+## Education:
+**Radioelectronics engineer**     
+Belarusian State University of Informatics and Radioelectronics.
+### Online learning:
+1. [Codecademy](https://www.codecademy.com/users/chuckkki/achievements)
+2. [Htmlacademy](https://htmlacademy.ru/profile/id823363/achievements)
+3. [Codewars](https://www.codewars.com/users/chuckkki/stats)
+
+## Language:
+My english level is pre-intermediate.   
+I'm studying English by myself.
