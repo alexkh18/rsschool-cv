@@ -242,3 +242,10 @@ footer {
   font-family: "Squada One", "Arial Black", sans-serif;
   text-align: center;
 }
+
+ul a:hover,
+ol a:hover {
+  color: paleturquoise;
+
+  background-color: #111111;
+}
