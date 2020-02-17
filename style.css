@@ -210,3 +210,35 @@ section#experience ul {
 .courses-list a {
   text-transform: uppercase;
 }
+
+footer {
+  background-color: #ffdab9;
+}
+
+#contacts {
+  display: flex;
+  flex-direction: column;
+  margin: 0 20%;
+}
+
+.contact-block {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.contact-block > img {
+  align-self: center;
+  width: 20%;
+  margin: 0 auto;
+}
+
+.contact-block > span {
+  align-self: center;
+  width: 30%;
+  min-width: 320px;
+  margin: 0 auto;
+
+  font-size: 1.25em;
+  font-family: "Squada One", "Arial Black", sans-serif;
+  text-align: center;
+}
