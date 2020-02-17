@@ -1,0 +1,212 @@
+@font-face {
+  font-style: normal;
+  font-weight: 400;
+  font-family: "Notable";
+
+  src: local("Notable Regular"), local("Notable-Regular"), url(https://fonts.gstatic.com/s/notable/v4/gNMEW3N_SIqx-WX9yHQiFaWw9MM.woff2) format("woff2");
+}
+
+@font-face {
+  font-style: normal;
+  font-weight: 400;
+  font-family: "Russo One";
+
+  font-display: swap;
+  src: local("Russo One"), local("RussoOne-Regular"), url(https://fonts.gstatic.com/s/russoone/v8/Z9XUDmZRWg6M1LvRYsHOz8mJvLuL9A.woff2) format("woff2");
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+}
+
+@font-face {
+  font-style: normal;
+  font-weight: 400;
+  font-family: "Roboto";
+
+  font-display: swap;
+  src: local("Roboto"), local("Roboto-Regular"), url(https://fonts.gstatic.com/s/roboto/v20/KFOmCnqEu92Fr1Mu4mxKKTU1Kg.woff2) format("woff2");
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+}
+
+@font-face {
+  font-style: normal;
+  font-weight: 400;
+  font-family: "Squada One";
+
+  font-display: swap;
+  src: local("Squada One"), local("SquadaOne-Regular"), url(https://fonts.gstatic.com/s/squadaone/v8/BCasqZ8XsOrx4mcOk6Mtaac2WRJnDgo.woff2) format("woff2");
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+}
+
+body {
+  max-width: 1024px;
+  margin: auto auto;
+
+  font-size: 20px;
+  font-family: "Roboto", "Arial", sans-serif;
+}
+
+header {
+  text-align: center;
+
+  background-color: #ffdab9;
+}
+
+h1 {
+  margin: 0 auto;
+  padding: 0 auto;
+  padding-bottom: 10px;
+
+  font-size: 1.75em;
+  font-family: "Notable", "Arial Black", sans-serif;
+}
+
+h1 span {
+  font-size: 0.75em;
+}
+
+.avatar-container {
+  background: linear-gradient(#ffdab9 49.5%, black 49.5% 50%, lightcyan 50% 100%);
+}
+
+.avatar-container img {
+  position: relative;
+
+  display: block;
+  margin: 0 auto;
+
+  border-radius: 150px;
+}
+
+h2 {
+  margin: 40px auto;
+
+  font-size: 1.75em;
+  font-family: "Russo One", "Arial Black", sans-serif;
+  text-align: center;
+}
+
+ul.navbar {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin: 0;
+  padding: 0;
+
+  list-style-type: none;
+  font-family: "Russo One", "Arial Black", sans-serif;
+
+  background-color: #ffdab9;
+  border-top: 1px solid black;
+  border-bottom: 1px solid black;
+}
+
+ul.navbar a {
+  display: block;
+  padding: 14px 16px;
+
+  text-align: center;
+  color: black;
+  text-decoration: none;
+}
+
+section {
+  margin: 0 15%;
+
+  text-align: justify;
+}
+
+hr {
+  height: 1px;
+  margin-top: 45px;
+
+  background-color: black;
+  border: none;
+}
+
+h3 {
+  margin: 0 auto;
+  margin-top: 20px;
+
+  font-size: 1.75em;
+}
+
+h3 + span {
+  display: block;
+  margin: 0 0;
+  margin-bottom: 5px;
+
+  font-style: italic;
+}
+
+.indent {
+  margin-left: 25px;
+}
+
+ul {
+  padding-left: 20px;
+}
+
+section#about p {
+  margin-top: 10px;
+  margin-bottom: 0;
+}
+
+.skills-list {
+  padding-left: 0;
+
+  counter-reset: skill;
+}
+
+.skills-list li {
+  display: flex;
+  align-items: stretch;
+  padding: 5px 5px;
+
+  font-size: 1.1em;
+  line-height: 100%;
+  font-family: "Russo One", "Arial Black", sans-serif;
+
+  counter-increment: skill;
+}
+
+.skills-list li::before {
+  content: counter(skill) ".";
+
+  width: 5%;
+  min-width: 20px;
+}
+
+.skill-name {
+  width: 25%;
+  margin-right: 5px;
+
+  line-height: 100%;
+}
+
+.level-bar {
+  align-self: center;
+  width: 75%;
+  height: 25px;
+
+  background: linear-gradient(to right, #ecff83 50%, white 50%);
+  border: 1px solid black;
+}
+
+.js + .level-bar,
+.git + .level-bar {
+  background: linear-gradient(to right, #c4ff57  60%, white 40%);
+}
+
+section#experience ul {
+  padding-left: 50px;
+
+  list-style-type: square;
+}
+
+.courses-list {
+  margin-top: 0;
+  padding-left: 50px;
+}
+
+.courses-list a {
+  text-transform: uppercase;
+}
