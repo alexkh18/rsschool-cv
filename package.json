@@ -15,5 +15,12 @@
   "bugs": {
     "url": "https://github.com/alexkh18/rsschool-cv/issues"
   },
-  "homepage": "https://github.com/alexkh18/rsschool-cv#readme"
+  "homepage": "https://github.com/alexkh18/rsschool-cv#readme",
+  "dependencies": {},
+  "devDependencies": {
+    "csscomb": "^4.3.0",
+    "htmlhint": "^0.11.0",
+    "stylelint": "^13.2.0",
+    "stylelint-config-htmlacademy": "^0.1.4"
+  }
 }
